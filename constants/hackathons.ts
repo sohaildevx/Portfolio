@@ -11,6 +11,7 @@ export type Hackathon = {
   techStack: string[];
   githubUrl: string | null;
   devpostUrl: string | null;
+  logo?: string;
 };
 
 export const hackathons: Hackathon[] = [

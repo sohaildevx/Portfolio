@@ -2,11 +2,10 @@
 
 import Image from "next/image";
 import { skills } from "@/constants/skills";
-import { hackathons } from "@/constants/hackathons";
 import { Button } from "../ui/button";
 import Section from "../ui/Section";
 import ProjectCard from "./ProjectCard";
-import HackathonCard from "./HackathonCard";
+import HackathonList from "./HackathonList";
 import { projects } from "@/constants/projects";
 import Contact from "@/components/layouts/Contact";
 import Education from "./Education";
@@ -124,30 +123,6 @@ const HeroSection = () => {
         ))}
       </Section>
 
-      {/* Hackathons */}
-      <Section id="hackathons">
-        <div className="w-full text-center">
-          <div className="space-y-3 mb-12">
-            <span className="inline-block rounded-full bg-gray-900 dark:bg-white px-4 py-1.5 text-xs sm:text-sm text-white dark:text-gray-900 font-semibold tracking-wide uppercase">
-              Hackathons
-            </span>
-            <h2 className="font-bold text-gray-900 dark:text-white text-3xl tracking-tight sm:text-4xl md:text-5xl text-center">
-              Hackathon Participation
-            </h2>
-            <p className="text-gray-500 dark:text-zinc-400 text-sm sm:text-base md:text-lg max-w-xl mx-auto text-center leading-relaxed">
-              Building innovative solutions under time pressure with talented
-              teams.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 sm:gap-6 max-w-5xl mx-auto">
-            {hackathons.map((hackathon) => (
-              <HackathonCard key={hackathon.id} hackathon={hackathon} />
-            ))}
-          </div>
-        </div>
-      </Section>
-
       {/* Projects */}
       <Section id="projects">
         <div className="w-full text-center">
@@ -188,6 +163,25 @@ const HeroSection = () => {
               </Button>
             </Link>
           </motion.div>
+        </div>
+      </Section>
+
+      {/* Hackathons */}
+      <Section id="hackathons">
+        <div className="w-full text-center">
+          <div className="space-y-3 mb-12">
+            <span className="inline-block rounded-full bg-gray-900 dark:bg-white px-4 py-1.5 text-xs sm:text-sm text-white dark:text-gray-900 font-semibold tracking-wide uppercase">
+              Hackathons
+            </span>
+            <h2 className="font-bold text-gray-900 dark:text-white text-3xl tracking-tight sm:text-4xl md:text-5xl text-center">
+              Hackathon Participation
+            </h2>
+            <p className="text-gray-500 dark:text-zinc-400 text-sm sm:text-base md:text-lg max-w-xl mx-auto text-center leading-relaxed">
+              Building innovative solutions under time pressure with talented teams.
+            </p>
+          </div>
+
+          <HackathonList />
         </div>
       </Section>
 
