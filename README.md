@@ -93,7 +93,7 @@ portofolio/
 │   │   ├── Contact.tsx           # Contact form component
 │   │   ├── FloatingToolbar.tsx   # Navigation toolbar
 │   │   ├── GithubGraph.tsx       # GitHub contributions graph
-│   │   ├── HackathonCard.tsx     # Hackathon card component
+│   │   ├── HackathonList.tsx      # Hackathon timeline list component
 │   │   ├── HeroSection.tsx       # Main hero section
 │   │   ├── ProjectCard.tsx       # Project card component
 │   │   ├── theme-provider.tsx    # Theme provider wrapper
