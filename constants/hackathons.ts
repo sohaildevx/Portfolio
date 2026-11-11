@@ -30,4 +30,19 @@ export const hackathons: Hackathon[] = [
     githubUrl: "https://github.com/AashishTambe/FounderAIWithGemini.git",
     devpostUrl: null,
   },
+  {
+    id: 2,
+    name: "Nebius x NVIDIA Global AI Hackathon",
+    organizer: "Nebius x NVIDIA",
+    date: "Aug 2026 - Oct 2026",
+    participants: "29,869",
+    project: "Repozite",
+    description:
+      "Repozite is an AI-powered GitHub repository analyzer that scans a public repository for potential issues, explains each finding, generates a targeted patch with an AI model, and runs whatever validation is available — all in one workflow.",
+    teamSize: 1,
+    role: "Full Stack Developer",
+    techStack: [],
+    githubUrl: "https://github.com/sohaildevx/Repozite.git",
+    devpostUrl: null,
+  },
 ];
