@@ -29,6 +29,7 @@ export const hackathons: Hackathon[] = [
     techStack: ["React 19", "TypeScript", "Tailwind CSS v4", "Gemini 3.0", "Recharts", "Vite"],
     githubUrl: "https://github.com/AashishTambe/FounderAIWithGemini.git",
     devpostUrl: null,
+    logo: "/hackathon_logos/gemini3.png",
   },
   {
     id: 2,
@@ -44,5 +45,6 @@ export const hackathons: Hackathon[] = [
     techStack: [],
     githubUrl: "https://github.com/sohaildevx/Repozite.git",
     devpostUrl: null,
+    logo: "/hackathon_logos/nebius_nvidia.png",
   },
 ];
