@@ -12,6 +12,23 @@ const manrope = Manrope({
 export const metadata: Metadata = {
   title: "Sohail Shaikh - Full Stack Developer",
   description: "Portfolio of Sohail Shaikh, a passionate Full Stack Developer specializing in modern web applications",
+  openGraph: {
+    title: "Sohail Shaikh - Full Stack Developer",
+    description: "Portfolio of Sohail Shaikh, a passionate Full Stack Developer specializing in modern web applications",
+    type: "website",
+    images: [
+      {
+        url: "/Images/landing_page.png",
+        width: 1800,
+        height: 895,
+        alt: "Sohail Shaikh - Full Stack Developer",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    images: ["/Images/landing_page.png"],
+  },
 };
 
 export default function RootLayout({
