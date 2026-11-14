@@ -10,6 +10,7 @@ const manrope = Manrope({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://sohail-portofolio.vercel.app"),
   title: "Sohail Shaikh - Full Stack Developer",
   description: "Portfolio of Sohail Shaikh, a passionate Full Stack Developer specializing in modern web applications",
   openGraph: {
