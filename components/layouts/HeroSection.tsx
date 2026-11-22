@@ -77,16 +77,41 @@ const HeroSection = () => {
 
       
       <Section title="About Me">
-        <p className="text-gray-600 dark:text-gray-300 leading-relaxed text-sm sm:text-base mb-4">
-          I&apos;m a Full Stack Developer who builds and ships real products —
-          not just tutorial projects. From AI expense trackers to Marathi legal
-          document platforms, I&apos;ve built full SaaS apps with auth,
-          payments, databases, and AI integrations.
-        </p>
+        <ul className="list-disc pl-5 space-y-3 sm:space-y-4 text-gray-600 dark:text-gray-300 leading-relaxed text-sm sm:text-base marker:text-gray-400 dark:marker:text-zinc-500">
+          <li>
+            I&apos;m a{" "}
+            <span className="font-semibold text-gray-900 dark:text-white underline underline-offset-2 decoration-2">
+              Full-Stack Developer
+            </span>{" "}
+            passionate about building digital products that combine thoughtful
+            design, solid engineering, and meaningful user experiences.
+          </li>
+          <li>
+            I design and develop modern web applications using{" "}
+            <span className="font-semibold text-gray-900 dark:text-white underline underline-offset-2 decoration-2">
+              React, Next.js, TypeScript, and Tailwind CSS
+            </span>
+            , focusing on clean architecture, performance, and intuitive
+            interactions.
+          </li>
+          <li>
+            Currently a{" "}
+            <span className="font-semibold text-gray-900 dark:text-white underline underline-offset-2 decoration-2">
+              1st-year MCA student
+            </span>
+            , I&apos;m exploring{" "}
+            <span className="font-semibold text-gray-900 dark:text-white underline underline-offset-2 decoration-2">
+              Generative AI, LLMs, LangChain, RAG, and LangGraph
+            </span>{" "}
+            while building intelligent applications and contributing to open
+            source.
+          </li>
+        </ul>
 
-        <p className="text-green-600 dark:text-green-400 font-semibold text-sm sm:text-base">
-          🟢 Open to Internships & Full-Time Opportunities
-        </p>
+        <span className="mt-4 sm:mt-5 inline-flex items-center gap-1.5 rounded-full border border-green-600/40 bg-green-500/10 px-3 py-1 text-xs font-medium text-green-600 dark:text-green-400">
+          <span className="h-1.5 w-1.5 rounded-full bg-green-500" />
+          Open to work
+        </span>
       </Section>
 
       
