@@ -7,6 +7,7 @@ const Contact = () => {
     name: "",
     email: "",
     message: "",
+    website: "",
   });
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
 
@@ -32,7 +33,7 @@ const Contact = () => {
 
       if (response.ok) {
         setStatus("success");
-        setFormData({ name: "", email: "", message: "" });
+        setFormData({ name: "", email: "", message: "", website: "" });
       } else {
         setStatus("error");
       }
@@ -50,10 +51,21 @@ const Contact = () => {
         Get In Touch
       </h2>
       <p className="text-gray-600 dark:text-gray-400 md:text-xl/relaxed mt-2 text-center mb-8">
-        Want to chat? Fill out the form below and I'll respond whenever I can.
+        Want to chat? Fill out the form below and I&apos;ll respond whenever I can.
       </p>
 
       <form onSubmit={handleSubmit} className="space-y-4 text-left">
+        <input
+          type="text"
+          name="website"
+          value={formData.website}
+          onChange={handleChange}
+          className="hidden"
+          tabIndex={-1}
+          autoComplete="off"
+          aria-hidden="true"
+        />
+
         <div>
           <label htmlFor="name" className="block text-gray-900 dark:text-white text-sm font-medium mb-2">
             Name
@@ -111,7 +123,7 @@ const Contact = () => {
         </Button>
 
         {status === "success" && (
-          <p className="text-green-500 text-center">Message sent successfully! I'll get back to you soon.</p>
+          <p className="text-green-500 text-center">Message sent successfully! I&apos;ll get back to you soon.</p>
         )}
 
         {status === "error" && (
