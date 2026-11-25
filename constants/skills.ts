@@ -14,6 +14,8 @@ import {
   SiGithub,
   SiPostman,
   SiDocker,
+  SiPython,
+  SiFastapi,
 } from "react-icons/si";
 import { VscVscode } from "react-icons/vsc";
 
@@ -32,7 +34,9 @@ export const skills: Record<string, Skill[]> = {
   ],
   backend: [
     { name: "Node.js", icon: SiNodedotjs },
+    { name: "Python", icon: SiPython },
     { name: "Express", icon: SiExpress },
+    { name: "FastAPI", icon: SiFastapi },
     { name: "MongoDB", icon: SiMongodb },
     { name: "PostgreSQL", icon: SiPostgresql },
     { name: "RESTful APIs", icon: null },

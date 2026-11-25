@@ -121,31 +121,20 @@ const HeroSection = () => {
 
       
       <Section id="skills" title="Skills">
-        {Object.entries(skills).map(([category, skillList]) => (
-          <div
-            key={category}
-            className="mb-4 sm:mb-6 last:mb-0 flex flex-col sm:flex-row sm:items-start gap-2 sm:gap-4"
-          >
-            <h4 className="text-sm sm:text-lg font-semibold capitalize text-gray-600 dark:text-gray-400 sm:min-w-25 pt-2">
-              {category}:
-            </h4>
-
-            <div className="flex flex-wrap gap-2">
-              {skillList.map((skill) => {
-                const Icon = skill.icon;
-                return (
-                  <span
-                    key={skill.name}
-                    className="inline-flex items-center gap-1.5 rounded-md border border-blue-600 dark:border-white bg-blue-500 dark:bg-white px-3 py-1.5 text-xs sm:text-sm font-medium text-white dark:text-black"
-                  >
-                    {Icon && <Icon className="h-3.5 w-3.5 sm:h-4 sm:w-4" />}
-                    {skill.name}
-                  </span>
-                );
-              })}
-            </div>
-          </div>
-        ))}
+        <div className="flex flex-wrap gap-2">
+          {Object.values(skills).flat().map((skill) => {
+            const Icon = skill.icon;
+            return (
+              <span
+                key={skill.name}
+                className="inline-flex items-center gap-1.5 rounded-md border border-blue-600 dark:border-white bg-blue-500 dark:bg-white px-3 py-1.5 text-xs sm:text-sm font-medium text-white dark:text-black"
+              >
+                {Icon && <Icon className="h-3.5 w-3.5 sm:h-4 sm:w-4" />}
+                {skill.name}
+              </span>
+            );
+          })}
+        </div>
       </Section>
 
       {/* Projects */}
