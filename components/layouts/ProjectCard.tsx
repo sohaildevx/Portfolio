@@ -18,6 +18,15 @@ import {
   SiCloudflare,
   SiSupabase,
   SiSocketdotio,
+  SiDjango,
+  SiFlask,
+  SiVite,
+  SiVitest,
+  SiPython,
+  SiRuff,
+  SiDocker,
+  SiRender,
+  SiNvidia,
 } from "react-icons/si";
 import { Project } from "@/constants/projects";
 
@@ -79,6 +88,16 @@ const iconMap: Record<string, React.ComponentType<{ className?: string; size?: n
       <path d="M21 2H3c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM9 4h2v5l-2 2V4zm6 0h2v7l-2 2V4zM7 16c0 .55.45 1 1 1h1v2c0 .55.45 1 1 1s1-.45 1-1v-2h2v2c0 .55.45 1 1 1s1-.45 1-1v-2h1c.55 0 1-.45 1-1v-4H7v4z" />
     </svg>
   ),
+  vite: SiVite,
+  vitest: SiVitest,
+  django: SiDjango,
+  flask: SiFlask,
+  python: SiPython,
+  ruff: SiRuff,
+  docker: SiDocker,
+  nvidia: SiNvidia,
+  render: SiRender,
+  cloudflare: SiCloudflare,
 };
 
 const iconSize = "w-4 h-4";
@@ -105,6 +124,16 @@ const techNames: Record<string, string> = {
   huggingface: "Hugging Face",
   gemini: "Gemini",
   chess: "Chess.js",
+  vite: "Vite",
+  vitest: "Vitest",
+  django: "Django",
+  flask: "Flask",
+  python: "Python",
+  ruff: "Ruff",
+  docker: "Docker",
+  nvidia: "Nebius (NVIDIA Nemotron)",
+  render: "Render (Gunicorn)",
+  cloudflare: "Cloudflare Workers",
 };
 
 const ProjectCard = ({
